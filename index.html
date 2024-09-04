@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TableThing">
+    <title>Survey</title>
+</head>
+
+<body>
+    <form>
+
+    <fieldset>
+
+        <legend>Customer Experience Survey</legend>
+
+        <label for="storeNum">Store Number</label>
+        <select name="storeNum" id="storeNum">
+            <option value="3109">3109</option>
+            <option value="2421">2421</option>
+            <option value="5357">5357</option>
+        </select>
+
+        <fieldset>
+            <legend>When you visited</legend>
+            <label for="visitTime">Time</label>
+            <input type="time" id="visitTime" name="visitTime">
+        </fieldset>
+
+        <label for="name">Name</label>
+        <input id="name" name="name" placeholder="Name">
+
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+
+        <fieldset>
+
+            <legend>How would you rate your level of satisfaction with your visit?</legend>
+            
+            <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+            <label for="satisfied">Satisfied</label><br>
+            
+            <input type="radio" id="neutral" name="satisfaction" value="neutral">
+            <label for="neutral">Neutral</label><br>
+            
+            <input type="radio" id="unsatisfied" name="satisfaction" value="unsatisfied">
+            <label for="unsatisfied">Unsatisfied</label><br>   
+
+        </fieldset>
+
+        <br>
+        
+        <label for="experience">Tell us about your experience</label><br>
+        <textarea id="experience" name="experience" rows="4" cols="50" placeholder="Please tell us about your experience here..."></textarea>
+        
+        <br>
+
+        <label for="timesvisited">How many times have you visited</label><br>
+        <textarea id="timesvisited" name="timesvisited" rows="4" cols="50" placeholder="Please tell us how many times you've visited...">
+        </textarea>
+
+        <br>
+
+        <input type="checkbox" name="consent">
+        Can we contact you?
+
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+</body>
+</html>
